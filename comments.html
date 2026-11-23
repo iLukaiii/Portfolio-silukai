@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Comments | Datu Ari Fakrul Danish Ahmad Petri</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="ambient ambient-two"></div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+            <span class="brand-mark">D</span>
+            <span>DATU<span class="accent">.FKI</span></span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="video.html">My Video</a>
+            <a class="active" href="comments.html">Comments</a>
+        </nav>
+
+    </header>
+
+    <!-- Main Content -->
+    <main class="container page-main">
+
+        <!-- Page Introduction -->
+        <div class="page-intro reveal">
+
+            <p class="eyebrow">04 / SAY HELLO</p>
+
+            <h1>
+                Your <span class="gradient-text">Comments.</span>
+            </h1>
+
+            <p class="lead">
+                Your feedback helps me learn and improve.
+                Feel free to leave a message.
+            </p>
+
+        </div>
+
+        <!-- Contact Section -->
+        <section class="contact-layout">
+
+            <!-- Contact Information -->
+            <div class="contact-copy panel reveal">
+
+                <p class="eyebrow">GET IN TOUCH</p>
+
+                <h2>
+                    Let's start a <span class="gradient-text">conversation.</span>
+                </h2>
+
+                <p class="muted">
+                    Have a suggestion, project idea, or feedback on this site?
+                    Send a message using the form.
+                </p>
+
+                <div class="contact-detail">
+
+                    <span>✉</span>
+
+                    <div>
+                        <small>EMAIL</small>
+                        <strong>datudanish07@gmail.com</strong>
+                    </div>
+
+                </div>
+
+                <div class="contact-detail">
+
+                    <span>◎</span>
+
+                    <div>
+                        <small>FACULTY & CAMPUS</small>
+                        <strong>FKI · UMS Kampus Antarabangsa Labuan</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Comment Form -->
+            <form
+                class="comment-form panel reveal"
+                id="commentForm"
+                action="https://formspree.io/f/xdegpngw"
+                method="POST"
+            >
+
+                <label for="visitorName">Your name</label>
+
+                <input
+                    id="visitorName"
+                    name="visitorName"
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                    maxlength="60"
+                >
+
+                <label for="visitorEmail">Email address</label>
+
+                <input
+                    id="visitorEmail"
+                    name="email"
+                    type="email"
+                    placeholder="name@example.com"
+                    required
+                >
+
+                <label for="rating">How was the website?</label>
+
+                <select id="rating" name="rating" required>
+
+                    <option value="">Choose one</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Needs improvement">Needs improvement</option>
+
+                </select>
+
+                <label for="message">Your comments</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your feedback here..."
+                    required
+                    maxlength="1000"
+                ></textarea>
+
+                <button class="button primary" type="submit" id="submitBtn">
+                    Send comment ↗
+                </button>
+
+                <p class="form-note" id="formNote" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <span>
+            © <span class="year"></span>
+            Datu Ari Fakrul Danish Ahmad Petri
+        </span>
+
+        <span>
+            Thank you for visiting <span class="accent">✦</span>
+        </span>
+
+    </footer>
+
+</body>
+</html>
